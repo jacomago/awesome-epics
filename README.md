@@ -1,0 +1,53 @@
+# Awesome EPICS
+
+The Experimental Physics and Industrial Control System (EPICS) is a set of software tools and applications used to develop and implement distributed control systems to operate devices such as particle accelerators, telescopes and other large experiments.
+
+* [Awesome EPICS](#awesome-epics)
+  * [Base](#base)
+    * [Libraries](#libraries)
+    * [Science Sites](#science-sites)
+    * [Editor Extensions](#editor-extensions)
+  * [Modules](#modules)
+  * [IOC Scripts](#ioc-scripts)
+  * [Applications](#applications)
+  * [Misc](#misc)
+
+## Base
+
+* [EPICS Base](https://github.com/epics-base/epics-base) - EPICS is a set of Open Source software tools, libraries and applications developed collaboratively and used worldwide to create distributed soft real-time control systems for scientific instruments such as a particle accelerators, telescopes and other large scientific experiments.
+* [e3](https://gitlab.esss.lu.se/e3/e3) - Allows for easily building EPICS modules directly from source and automagically resolves module dependencies, and allows for site-specific modifications to EPICS modules without needing to directly modify source trees.
+
+### Libraries
+
+* [pyepics](https://github.com/pyepics/pyepics) - PyEpics is a Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
+* [javaepics](https://github.com/epics-base/epicsCoreJava) - Parent repository for building, bundling, and deploying the EPICS Core Java libraries.
+
+### Science Sites
+
+* [ESS](https://europeanspallationsource.se/) - The European Spallation Source (ESS) is a European Research Infrastructure Consortium (ERIC), a multi-disciplinary research facility based on the world’s most powerful neutron source.
+* [PSI](https://www.psi.ch/en) - The Paul Scherrer Institute PSI is the largest research institute for natural and engineering sciences in Switzerland, conducting cutting-edge research in four main fields: future technologies, energy and climate, health innovation and fundamentals of nature.
+
+### Editor Extensions
+
+* [vscode](https://github.com/epics-extensions/vscode-epics) - VS Code colorization for EPICS database, templates and substitution files.
+
+## Modules
+
+* [asyn](https://github.com/epics-modules/asyn) - EPICS module for driver and device support.
+* [StreamDevice](https://github.com/paulscherrerinstitute/StreamDevice) - EPICS Driver for message based I/O.
+* [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
+* [mca](https://github.com/epics-modules/mca) - EPICS support for multi-channel analyzers (MCA) and multi-channel scalers (MCS).
+
+## IOC Scripts
+
+## Applications
+
+* [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory services for a list channels.
+* [Archiver](https://github.com/slacmshankar/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
+* Alarm Service
+* [Phoebus](https://github.com/ControlSystemStudio/phoebus) - A framework and set of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
+* [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Control System Studio is an Eclipse-based collections of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
+
+## Misc
+
+* [Extensions](https://epics.anl.gov/extensions/index.php) - The following list gives access to individual pages for most of the standard EPICS host tools and CA clients.
