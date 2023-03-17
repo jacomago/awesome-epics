@@ -2,11 +2,6 @@
 
 The Experimental Physics and Industrial Control System (EPICS) is a set of software tools and applications used to develop and implement distributed control systems to operate devices such as particle accelerators, telescopes and other large experiments.
 
-Other lists:
-
-* [EPICS Extensions](https://epics.anl.gov/extensions/index.php)
-* (https://epics-controls.org/resources-and-support/modules/soft-support/)
-
 * [Awesome EPICS](#awesome-epics)
   * [Base](#base)
     * [Libraries](#libraries)
@@ -82,6 +77,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [Phoebus](https://github.com/ControlSystemStudio/phoebus) - A framework and set of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
 * [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Control System Studio is an Eclipse-based collections of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
 
-## Misc
+## Other Lists
 
-* [Extensions](https://epics.anl.gov/extensions/index.php) - The following list gives access to individual pages for most of the standard EPICS host tools and CA clients.
+* [EPICS Extensions](https://epics.anl.gov/extensions/index.php) - The following list gives access to individual pages for most of the standard EPICS host tools and CA clients.
+* [EPICS SoftSupport](https://epics-controls.org/resources-and-support/modules/soft-support/) - The following table contains an index of EPICS Soft Support modules available for use within IOCs.
+
