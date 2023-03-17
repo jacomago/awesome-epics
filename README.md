@@ -1,6 +1,11 @@
-# Awesome EPICS
+# Awesome [EPICS](https://epics-controls.org/)
 
 The Experimental Physics and Industrial Control System (EPICS) is a set of software tools and applications used to develop and implement distributed control systems to operate devices such as particle accelerators, telescopes and other large experiments.
+
+Other lists:
+
+* [EPICS Extensions](https://epics.anl.gov/extensions/index.php)
+* (https://epics-controls.org/resources-and-support/modules/soft-support/)
 
 * [Awesome EPICS](#awesome-epics)
   * [Base](#base)
@@ -12,6 +17,15 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
   * [Applications](#applications)
   * [Misc](#misc)
 
+
+## Main EPICS Links
+
+* [EPICS Tech Talk Mailing List](https://epics.anl.gov/tech-talk/) - The main forum for talking about EPICS and the other parts of the ecosystem.
+* [EPICS Controls](https://epics-controls.org/) - The newer home for EPICS.
+* [EPICS Argonne Home](https://epics.anl.gov/) - The older website hosted at Argonne National Laboratory.
+* [EPICS Documentation](https://docs.epics-controls.org/en/latest/index.html)
+* [EPICS Github Organization](https://github.com/epics-base)
+
 ## Base
 
 * [EPICS Base](https://github.com/epics-base/epics-base) - EPICS is a set of Open Source software tools, libraries and applications developed collaboratively and used worldwide to create distributed soft real-time control systems for scientific instruments such as a particle accelerators, telescopes and other large scientific experiments.
@@ -22,14 +36,34 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 * [pyepics](https://github.com/pyepics/pyepics) - PyEpics is a Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
 * [javaepics](https://github.com/epics-base/epicsCoreJava) - Parent repository for building, bundling, and deploying the EPICS Core Java libraries.
 
-### Science Sites
+### User Sites
 
 * [ESS](https://europeanspallationsource.se/) - The European Spallation Source (ESS) is a European Research Infrastructure Consortium (ERIC), a multi-disciplinary research facility based on the world’s most powerful neutron source.
 * [PSI](https://www.psi.ch/en) - The Paul Scherrer Institute PSI is the largest research institute for natural and engineering sciences in Switzerland, conducting cutting-edge research in four main fields: future technologies, energy and climate, health innovation and fundamentals of nature.
+* [ANS](https://www.anl.gov/) - Argonne is a multidisciplinary science and engineering research center, where talented scientists and engineers work together to answer the biggest questions facing humanity, from how to obtain affordable clean energy to protecting ourselves and our environment. 
+* [Diamond Light Source](https://www.diamond.ac.uk/) - Diamond Light Source is the UK’s national synchrotron. It works like a giant microscope, harnessing the power of electrons to produce bright light that scientists can use to study anything from fossils to jet engines to viruses and vaccines.
 
 ### Editor Extensions
 
 * [vscode](https://github.com/epics-extensions/vscode-epics) - VS Code colorization for EPICS database, templates and substitution files.
+
+
+### Network Protocols
+
+#### pvAccess
+
+pvAccess is a high-performance network communication protocol for signal monitoring and scientific data services interconnect.
+
+* [pvAccess Specifiction](https://github.com/epics-base/pvAccessCPP/wiki/Protocol-Encoding)
+* [Original C++ Implementation](https://github.com/epics-base/pvAccessCPP)
+* [pvxs C++ Implementation](https://mdavidsaver.github.io/pvxs/index.html)
+* [Original Java Implementation](https://github.com/epics-base/epicsCoreJava/tree/3a32ca5dbc2fd9db610c3d7c08e37600b9aa0b32/pvAccessJava#readme)
+* [Phoebus Java Implementation](https://github.com/ControlSystemStudio/phoebus/tree/master/core/pva)
+
+#### Channel Access
+
+* [Channel Access Specification](https://docs.epics-controls.org/en/latest/specs/ca_protocol.html)
+* [Java Implementation](https://github.com/epics-base/jca)
 
 ## Modules
 
