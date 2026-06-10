@@ -4,7 +4,7 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 
 * [Awesome EPICS](#awesome-epics)
   * [Base](#base)
-    * [Science Sites](#science-sites)
+    * [User Sites](#user-sites)
     * [Editor Extensions](#editor-extensions)
   * [Modules](#modules)
   * [Packaging](#packaging)
