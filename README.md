@@ -4,14 +4,13 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 
 * [Awesome EPICS](#awesome-epics)
   * [Base](#base)
-    * [Libraries](#libraries)
     * [Science Sites](#science-sites)
     * [Editor Extensions](#editor-extensions)
   * [Modules](#modules)
-  * [IOC Scripts](#ioc-scripts)
+  * [Packaging](#packaging)
+  * [IOC Runners](#ioc-runners)
   * [Applications](#applications)
-  * [Misc](#misc)
-
+  * [Other lists](#other-lists)
 
 ## Main EPICS Links
 
@@ -24,12 +23,7 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 ## Base
 
 * [EPICS Base](https://github.com/epics-base/epics-base) - EPICS is a set of Open Source software tools, libraries and applications developed collaboratively and used worldwide to create distributed soft real-time control systems for scientific instruments such as a particle accelerators, telescopes and other large scientific experiments.
-* [e3](https://gitlab.esss.lu.se/e3/e3) - Allows for easily building EPICS modules directly from source and automagically resolves module dependencies, and allows for site-specific modifications to EPICS modules without needing to directly modify source trees.
-
-### Libraries
-
-* [pyepics](https://github.com/pyepics/pyepics) - PyEpics is a Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
-* [javaepics](https://github.com/epics-base/epicsCoreJava) - Parent repository for building, bundling, and deploying the EPICS Core Java libraries.
+* [EPICS Docs](https://github.com/epics-docs/epics-docs) - Documentation for EPICS Base.
 
 ### User Sites
 
@@ -41,7 +35,6 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 ### Editor Extensions
 
 * [vscode](https://github.com/epics-extensions/vscode-epics) - VS Code colorization for EPICS database, templates and substitution files.
-
 
 ### Network Protocols
 
@@ -59,6 +52,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 
 * [Channel Access Specification](https://docs.epics-controls.org/en/latest/specs/ca_protocol.html)
 * [Java Implementation](https://github.com/epics-base/jca)
+* [pyepics](https://github.com/pyepics/pyepics) - PyEpics is a Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
 
 ## Modules
 
@@ -67,12 +61,18 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
 * [mca](https://github.com/epics-modules/mca) - EPICS support for multi-channel analyzers (MCA) and multi-channel scalers (MCS).
 
-## IOC Scripts
+## Packaging
+
+* [e3](https://gitlab.esss.lu.se/e3/e3) - Allows for easily building EPICS modules directly from source and automagically resolves module dependencies, and allows for site-specific modifications to EPICS modules without needing to directly modify source trees.
+* [EPNix](https://epics-extensions.github.io/EPNix/nixos-25.11/) - EPNix (pronunciation: as if you are high on mushrooms) enables you to build, package, deploy IOCs and other EPICS-related software by using the Nix package manager.
+* [EPICS Containers](https://github.com/epics-containers) - A collection of tools and documentation for building, deploying and managing containerized EPICS IOCs in a Kubernetes cluster.
+
+## IOC Runners
 
 ## Applications
 
 * [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory services for a list channels.
-* [Archiver](https://github.com/slacmshankar/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
+* [Archiver](https://github.com/archiver-appliance/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
 * Alarm Service
 * [Phoebus](https://github.com/ControlSystemStudio/phoebus) - A framework and set of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
 * [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Control System Studio is an Eclipse-based collections of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
