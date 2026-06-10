@@ -2,15 +2,14 @@
 
 The Experimental Physics and Industrial Control System (EPICS) is a set of software tools and applications used to develop and implement distributed control systems to operate devices such as particle accelerators, telescopes and other large experiments.
 
-* [Awesome EPICS](#awesome-epics)
-  * [Base](#base)
+* [Base](#base)
     * [User Sites](#user-sites)
     * [Editor Extensions](#editor-extensions)
-  * [Modules](#modules)
-  * [Packaging](#packaging)
-  * [IOC Runners](#ioc-runners)
-  * [Applications](#applications)
-  * [Other lists](#other-lists)
+* [Modules](#modules)
+* [Packaging](#packaging)
+* [IOC Runners](#ioc-runners)
+* [Applications](#applications)
+* [Other lists](#other-lists)
 
 ## Main EPICS Links
 
@@ -29,7 +28,7 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 
 * [ESS](https://europeanspallationsource.se/) - The European Spallation Source (ESS) is a European Research Infrastructure Consortium (ERIC), a multi-disciplinary research facility based on the world’s most powerful neutron source.
 * [PSI](https://www.psi.ch/en) - The Paul Scherrer Institute PSI is the largest research institute for natural and engineering sciences in Switzerland, conducting cutting-edge research in four main fields: future technologies, energy and climate, health innovation and fundamentals of nature.
-* [ANL](https://www.anl.gov/) - Argonne is a multidisciplinary science and engineering research center, where talented scientists and engineers work together to answer the biggest questions facing humanity, from how to obtain affordable clean energy to protecting ourselves and our environment. 
+* [ANL](https://www.anl.gov/) - Argonne is a multidisciplinary science and engineering research center, where talented scientists and engineers work together to answer the biggest questions facing humanity, from how to obtain affordable clean energy to protecting ourselves and our environment.
 * [Diamond Light Source](https://www.diamond.ac.uk/) - Diamond Light Source is the UK’s national synchrotron. It works like a giant microscope, harnessing the power of electrons to produce bright light that scientists can use to study anything from fossils to jet engines to viruses and vaccines.
 
 ### Editor Extensions
@@ -81,4 +80,3 @@ pvAccess is a high-performance network communication protocol for signal monitor
 
 * [EPICS Extensions](https://epics.anl.gov/extensions/index.php) - The following list gives access to individual pages for most of the standard EPICS host tools and CA clients.
 * [EPICS SoftSupport](https://epics-controls.org/resources-and-support/modules/soft-support/) - The following table contains an index of EPICS Soft Support modules available for use within IOCs.
-
