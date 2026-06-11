@@ -72,6 +72,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 
 - [Channel Access Specification](https://docs.epics-controls.org/en/latest/specs/ca_protocol.html) - The official specification of the Channel Access network protocol.
 - [Java Implementation](https://github.com/epics-base/jca) - Java Channel Access (JCA) client and server library.
+- [Jackie](https://oss.aquenos.com/epics/jackie/) - Jackie Java Channel Access client library.
 - [pyepics](https://github.com/pyepics/pyepics) - Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
 - [caproto](https://github.com/caproto/caproto) - Pure-Python Channel Access implementation (client and server) with a pluggable I/O model.
 - [pcaspy](https://github.com/paulscherrerinstitute/pcaspy) - Portable Channel Access Server in Python for embedding CA servers in Python applications (PSI).
