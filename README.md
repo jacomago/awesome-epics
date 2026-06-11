@@ -22,6 +22,7 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
     * [Alarms](#alarms)
     * [Logging](#logging)
     * [Development & Testing](#development--testing)
+* [Tutorials & Training](#tutorials--training)
 * [Other Lists](#other-lists)
 
 ## Main EPICS Links
@@ -74,6 +75,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [ca-nameserver](https://github.com/epics-extensions/ca-nameserver) - Channel Access PV name server: lets clients discover PVs without flooding every subnet.
 * [epicars](https://github.com/ndevenish/epicars) - Standalone pure-Rust Channel Access protocol client.
 * [epics-ca](https://gitlab.com/agerasev/epics-ca) - Rust client library for Channel Access.
+* [cacm](https://github.com/anjohnson/cacm) - Channel Access Client Monitor: command-line CA monitoring tool.
 
 ## Modules
 
@@ -83,6 +85,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [StreamDevice](https://github.com/paulscherrerinstitute/StreamDevice) - EPICS Driver for message based I/O. _(site-PSI)_
 * [devlib2](https://github.com/epics-modules/devlib2) - Portable helper library for PCIbus, MMIO, and VME64 CR/CSR hardware access; used by many hardware support modules.
 * [epics-open62541](https://github.com/KIT-IBPT/epics-open62541) - EPICS device support acting as an OPC UA client via the open62541 library. _(site-KIT)_
+* [pscdrv](https://github.com/mdavidsaver/pscdrv) - Portable Streaming Controller driver: EPICS device support for streaming socket-based hardware controllers.
+* [linStat](https://github.com/mdavidsaver/linStat) - EPICS driver serving Linux system- and process-level statistics as PVs.
 
 ### Motion & Industrial
 
@@ -94,6 +98,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [opcua](https://github.com/epics-modules/opcua) - EPICS device support for OPC UA servers.
 * [epics-SMC9300](https://github.com/KIT-IBPT/epics-SMC9300) - EPICS device support for the Huber SMC 9300 motor controller. _(site-KIT)_
 * [epics-DeltaPS](https://github.com/KIT-IBPT/epics-DeltaPS) - EPICS device support for Delta SM3300 series power supplies. _(site-KIT)_
+* [directNetAsyn](https://github.com/anjohnson/directNetAsyn) - EPICS device support for Automation Direct (Koyo) PLCs over an Asyn serial connection.
+* [isara-arm](https://github.com/mdavidsaver/isara-arm) - EPICS driver for the ISARA sample-mounting robot.
 
 ### Detectors & DAQ
 
@@ -103,6 +109,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [calc](https://github.com/epics-modules/calc) - synApps module providing sCalcout, swait, transform, and other calculation record types.
 * [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
 * [epics-picoharp](https://github.com/KIT-IBPT/epics-picoharp) - EPICS driver for PicoQuant PicoHarp 300 time-correlated photon counter. _(site-KIT)_
+* [ndwarp](https://github.com/mdavidsaver/ndwarp) - NDPluginWarp: areaDetector plugin for image spatial-distortion correction / warping.
 
 ### Utilities
 
@@ -130,6 +137,11 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [systemd-softioc](https://github.com/NSLS2/systemd-softioc) - systemd service scripts for managing EPICS soft IOCs via procServ.
 * [ibek](https://github.com/epics-containers/ibek) - IOC Builder for EPICS and Kubernetes: generates IOC startup scripts from YAML.
 * [iocmanager](https://github.com/pcdshub/iocmanager) - PyQt5 GUI for configuring and monitoring EPICS IOC processes across a facility. _(site-PCDS)_
+* [EPICS-env](https://github.com/jeonghanlee/EPICS-env) - Reproducible EPICS Base + modules build/configuration environment.
+* [EPICS-env-distribution](https://github.com/jeonghanlee/EPICS-env-distribution) - Pre-built binary distribution of the EPICS-env environment.
+* [epics-ioc-runner](https://github.com/jeonghanlee/epics-ioc-runner) - CLI tool for managing (start/stop/status) EPICS IOC processes.
+* [epics_NIOCs](https://github.com/jeonghanlee/epics_NIOCs) - Setup tool for running multiple IOCs on a single Linux host.
+* [EPICS-IOC-template-tools](https://github.com/jeonghanlee/EPICS-IOC-template-tools) - ALS-U EPICS IOC template generator. _(site-ALS-U)_
 
 ## Applications
 
@@ -163,6 +175,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [eapy](https://github.com/epics-extensions/eapy) - Python interface to the ChannelArchiver V4 data access layer.
 * [epics-archiver (Rust)](https://github.com/physwkim/archiver-rs) - Rust port of the EPICS Archiver Appliance with CA/pvAccess ingestion and PlainPB storage.
 * [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory service for a list of channels.
+* [aaclient](https://github.com/mdavidsaver/aaclient) - Python client for the EPICS Archiver Appliance.
+* [epicsarchiverap-env](https://github.com/jeonghanlee/epicsarchiverap-env) - Configuration/build environment for deploying the EPICS Archiver Appliance.
 
 ### Alarms
 
@@ -179,6 +193,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [Olog logbook](https://github.com/Olog/logbook) - Lightweight HTML5/jQuery web client for Olog Service. _(superseded by phoebus-olog-web-client)_
 * [ELOG](https://elog.psi.ch/elog/) - Lightweight electronic logbook widely used at physics facilities alongside EPICS. _(site-PSI)_
 * [py_elog](https://github.com/paulscherrerinstitute/py_elog) - Python client for reading and writing ELOG logbook entries. _(site-PSI)_
+* [ioclogserv2](https://github.com/mdavidsaver/ioclogserv2) - More flexible reimplementation of the EPICS IOC log server.
 
 ### Development & Testing
 
@@ -197,9 +212,30 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [labCA](https://github.com/till-s/epics-labca) - EPICS Channel Access interface for MATLAB and Scilab.
 * [GATO](https://github.com/epics-extensions/gato) - Legacy generator tool for EPICS display files. _(archived)_
 * [archstats](https://github.com/pcdshub/archstats) - EPICS IOC providing Archiver Appliance health and statistics records. _(site-PCDS)_
+* [EPICS-IOC-Demo](https://github.com/jeonghanlee/EPICS-IOC-Demo) - Simple example IOC (Asyn, Calc, StreamDevice) with a TCP/IP serial simulator.
+* [ServiceTestIOC](https://github.com/jeonghanlee/ServiceTestIOC) - Minimal IOC for testing EPICS middleware services.
+* [tc32sim](https://github.com/jeonghanlee/tc32sim) - EPICS IOC simulator for TC-32 thermocouple devices.
+* [epics-modbus-example](https://github.com/mdavidsaver/epics-modbus-example) - Example IOC using the modbus driver against a simulated PLC.
+* [vxi11sim](https://github.com/mdavidsaver/vxi11sim) - Simple simulated VXI-11 server for testing instrument communication.
+* [ioc-clone](https://github.com/mdavidsaver/ioc-clone) - Captures a snapshot of PV values as a loadable `.db` file.
+* [ci-core-dumper](https://github.com/mdavidsaver/ci-core-dumper) - Automates analysis of core dumps from crashes during CI builds and test runs.
+
+## Tutorials & Training
+
+* [EPICS Training](https://github.com/epics-training) - GitHub organization of official EPICS training courses and hands-on materials.
+* [training-collection](https://github.com/epics-training/training-collection) - Parent repo bundling all modules for an EPICS training course.
+* [training-vm](https://github.com/epics-training/training-vm) - Flexible, maintainable EPICS training VM built with VirtualBox and Ansible.
+* [epics7-overview](https://github.com/epics-training/epics7-overview) - Overview of EPICS 7 with examples from QSRV2, PVXS, and P4P.
+* [phoebus-training](https://github.com/epics-training/phoebus-training) - Training material and references for Phoebus.
+* [stream-introduction](https://github.com/epics-training/stream-introduction) - Introductory training for StreamDevice.
+* [opcua-support](https://github.com/epics-training/opcua-support) - Introduction and hands-on for the EPICS OPC UA device support.
+* [areadetector-training](https://github.com/epics-training/areadetector-training) - Hands-on training for areaDetector.
+* [epics-trainings](https://github.com/jeonghanlee/epics-trainings) - EPICS environment training materials and exercises.
+* [RTEMS Tutorial](https://github.com/anjohnson/RTEMS-tutorial) - Eric Norum's "Getting Started with RTEMS" tutorial and build scripts, for EPICS IOCs on RTEMS.
 
 ## Other Lists
 
 * [EPICS Extensions](https://epics.anl.gov/extensions/index.php) - The following list gives access to individual pages for most of the standard EPICS host tools and CA clients.
 * [EPICS SoftSupport](https://epics-controls.org/resources-and-support/modules/soft-support/) - The following table contains an index of EPICS Soft Support modules available for use within IOCs.
+* [EPICS Related Software](https://docs.epics-controls.org/en/latest/software/epics-related-software.html) - The official EPICS documentation catalog of related software, modules, and tools.
 * [Tango Controls](https://tango-controls.org/) - Free open-source device-oriented control system framework used widely at European facilities; the main open-source alternative to EPICS.
