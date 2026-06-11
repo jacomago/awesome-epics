@@ -76,6 +76,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [epicars](https://github.com/ndevenish/epicars) - Standalone pure-Rust Channel Access protocol client.
 * [epics-ca](https://gitlab.com/agerasev/epics-ca) - Rust client library for Channel Access.
 * [cacm](https://github.com/anjohnson/cacm) - Channel Access Client Monitor: command-line CA monitoring tool.
+* [NetChannelAccess](https://github.com/paulscherrerinstitute/NetChannelAccess) - Pure C#/.NET implementation of the Channel Access protocol (client and server). _(site-PSI)_
+* [caTools](https://github.com/dirk-zimoch/caTools) - PSI's enhanced Channel Access command-line tools (caget, caput, camonitor, cawait, and more). _(site-PSI)_
 
 ## Modules
 
@@ -87,6 +89,10 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [epics-open62541](https://github.com/KIT-IBPT/epics-open62541) - EPICS device support acting as an OPC UA client via the open62541 library. _(site-KIT)_
 * [pscdrv](https://github.com/mdavidsaver/pscdrv) - Portable Streaming Controller driver: EPICS device support for streaming socket-based hardware controllers.
 * [linStat](https://github.com/mdavidsaver/linStat) - EPICS driver serving Linux system- and process-level statistics as PVs.
+* [regdev](https://github.com/paulscherrerinstitute/regdev) - Generic EPICS register-device support framework for memory-mapped and register-based hardware. _(site-PSI)_
+* [mmap](https://github.com/paulscherrerinstitute/mmap) - regDev driver for VME and file-based memory maps. _(site-PSI)_
+* [asynPythonDriver](https://github.com/paulscherrerinstitute/asynPythonDriver) - Write an asynPortDriver entirely in Python. _(site-PSI)_
+* [i2cDev](https://github.com/paulscherrerinstitute/i2cDev) - EPICS support and a simple API for I2C devices on Linux. _(site-PSI)_
 
 ### Motion & Industrial
 
@@ -100,6 +106,9 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [epics-DeltaPS](https://github.com/KIT-IBPT/epics-DeltaPS) - EPICS device support for Delta SM3300 series power supplies. _(site-KIT)_
 * [directNetAsyn](https://github.com/anjohnson/directNetAsyn) - EPICS device support for Automation Direct (Koyo) PLCs over an Asyn serial connection.
 * [isara-arm](https://github.com/mdavidsaver/isara-arm) - EPICS driver for the ISARA sample-mounting robot.
+* [s7plc](https://github.com/paulscherrerinstitute/s7plc) - EPICS driver for communication with Siemens S7 PLCs. _(site-PSI)_
+* [ecmccfg](https://github.com/paulscherrerinstitute/ecmccfg) - Configuration and deployment scripts for the EtherCAT Motion Controller (ecmc). _(site-PSI)_
+* [ecat2](https://github.com/paulscherrerinstitute/ecat2) - PSI EtherCAT driver for EPICS. _(site-PSI)_
 
 ### Detectors & DAQ
 
@@ -110,6 +119,9 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
 * [epics-picoharp](https://github.com/KIT-IBPT/epics-picoharp) - EPICS driver for PicoQuant PicoHarp 300 time-correlated photon counter. _(site-KIT)_
 * [ndwarp](https://github.com/mdavidsaver/ndwarp) - NDPluginWarp: areaDetector plugin for image spatial-distortion correction / warping.
+* [slsDetector](https://github.com/paulscherrerinstitute/slsDetector) - areaDetector driver for SLS Detector Group detectors (Eiger, Jungfrau, Mythen). _(site-PSI)_
+* [ADZMQ](https://github.com/paulscherrerinstitute/ADZMQ) - ZMQ ADDriver and NDPlugin for streaming areaDetector image data over ZeroMQ. _(site-PSI)_
+* [cam_server](https://github.com/paulscherrerinstitute/cam_server) - Camera server that converts EPICS-enabled cameras into bsread image streams. _(site-PSI)_
 
 ### Utilities
 
@@ -120,6 +132,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
 * [mqtt](https://github.com/epics-modules/mqtt) - Native EPICS support for the MQTT protocol, enabling integration with IoT brokers.
 * [epics-execute](https://github.com/KIT-IBPT/epics-execute) - EPICS device support for executing arbitrary shell scripts from an IOC. _(site-KIT)_
+* [IocshDeclWrap](https://github.com/paulscherrerinstitute/IocshDeclWrap) - C++ templates for easily wrapping user functions as EPICS IOC-shell commands. _(site-PSI)_
+* [iocsh_utilities](https://github.com/paulscherrerinstitute/iocsh_utilities) - Assorted EPICS IOC-shell utility commands. _(site-PSI)_
 
 ### Scripting
 
@@ -142,6 +156,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [epics-ioc-runner](https://github.com/jeonghanlee/epics-ioc-runner) - CLI tool for managing (start/stop/status) EPICS IOC processes.
 * [epics_NIOCs](https://github.com/jeonghanlee/epics_NIOCs) - Setup tool for running multiple IOCs on a single Linux host.
 * [EPICS-IOC-template-tools](https://github.com/jeonghanlee/EPICS-IOC-template-tools) - ALS-U EPICS IOC template generator. _(site-ALS-U)_
+* [require](https://github.com/paulscherrerinstitute/require) - Runtime loader for EPICS IOCs that dynamically loads versioned support modules; the core of PSI's `driver.makefile` build system. _(site-PSI)_
+* [makeUtils](https://github.com/paulscherrerinstitute/makeUtils) - Extensions for PSI's `driver.makefile`, used together with require. _(site-PSI)_
 
 ## Applications
 
@@ -157,6 +173,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [StripTool](https://github.com/epics-extensions/StripTool) - Legacy strip-chart plotting tool for Channel Access PVs.
 * [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Eclipse-based predecessor to Phoebus for monitoring and operating large scale control systems. Superseded by Phoebus. _(archived)_
 * [DBWR](https://github.com/ornl-epics/dbwr) - Display Builder Web Runtime: renders Phoebus .bob OPI files in any browser with no client installation. _(site-ORNL)_
+* [jstriptool](https://github.com/paulscherrerinstitute/jstriptool) - Java reimplementation of StripTool for strip-chart plotting of Channel Access PVs. _(site-PSI)_
+* [PShell](https://github.com/paulscherrerinstitute/pshell) - Java/Python scientific scripting workbench and GUI for controlling EPICS-based experiments. _(site-PSI)_
 
 ### Web & Gateways
 
@@ -164,6 +182,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [pvws](https://github.com/ornl-epics/pvws) - PV Web Socket: serves Channel Access and pvAccess PVs over WebSockets to browser clients.
 * [pvws-springboot](https://github.com/ControlSystemStudio/pvws-springboot) - Spring Boot reimplementation of the pvws PV WebSocket server.
 * [epics2web](https://github.com/JeffersonLab/epics2web) - Web gateway that exposes EPICS CA PVs via a JSON WebSocket API.
+* [wica-http](https://github.com/paulscherrerinstitute/wica-http) - HTTP streaming service providing real-time browser access to live EPICS control-system data. _(site-PSI)_
 
 ### Data & Archiving
 
@@ -219,6 +238,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [vxi11sim](https://github.com/mdavidsaver/vxi11sim) - Simple simulated VXI-11 server for testing instrument communication.
 * [ioc-clone](https://github.com/mdavidsaver/ioc-clone) - Captures a snapshot of PV values as a loadable `.db` file.
 * [ci-core-dumper](https://github.com/mdavidsaver/ci-core-dumper) - Automates analysis of core dumps from crashes during CI builds and test runs.
+* [EpicsSniffer](https://github.com/paulscherrerinstitute/EpicsSniffer) - GUI tool for analyzing EPICS Channel Access traffic in real time and from pcap files. _(site-PSI)_
+* [dbtoolspy](https://github.com/paulscherrerinstitute/dbtoolspy) - Python module for reading and parsing EPICS database files. _(site-PSI)_
 
 ## Tutorials & Training
 
