@@ -9,9 +9,18 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
         * [pvAccess](#pvaccess)
         * [Channel Access](#channel-access)
 * [Modules](#modules)
-* [Packaging](#packaging)
-* [IOC Runners](#ioc-runners)
+    * [Driver Infrastructure](#driver-infrastructure)
+    * [Motion & Industrial](#motion--industrial)
+    * [Detectors & DAQ](#detectors--daq)
+    * [Utilities](#utilities)
+    * [Scripting](#scripting)
+* [Deployment](#deployment)
 * [Applications](#applications)
+    * [Operator Interfaces](#operator-interfaces)
+    * [Web & Gateways](#web--gateways)
+    * [Data & Archiving](#data--archiving)
+    * [Alarms](#alarms)
+    * [Development & Testing](#development--testing)
 * [Other Lists](#other-lists)
 
 ## Main EPICS Links
@@ -59,38 +68,49 @@ pvAccess is a high-performance network communication protocol for signal monitor
 
 ## Modules
 
+### Driver Infrastructure
+
 * [asyn](https://github.com/epics-modules/asyn) - EPICS module for driver and device support.
 * [StreamDevice](https://github.com/paulscherrerinstitute/StreamDevice) - EPICS Driver for message based I/O. _(site-PSI)_
-* [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
-* [mca](https://github.com/epics-modules/mca) - EPICS support for multi-channel analyzers (MCA) and multi-channel scalers (MCS).
-* [motor](https://github.com/epics-modules/motor) - EPICS motor record and device support for a wide range of motion controllers.
-* [iocStats](https://github.com/epics-modules/iocStats) - IOC statistics and health monitoring records.
-* [opcua](https://github.com/epics-modules/opcua) - EPICS device support for OPC UA servers.
-* [areaDetector](https://github.com/areaDetector/ADCore) - Framework and core library for detector and camera integration.
-* [PyDevice](https://github.com/klemenv/PyDevice) - Device support for writing IOC functionality directly in Python.
-* [pyDevSup](https://github.com/epics-modules/pyDevSup) - Device support layer for implementing EPICS record processing in Python.
-* [modbus](https://github.com/epics-modules/modbus) - EPICS support for Modbus TCP/IP and serial communication with PLCs and other devices.
-* [ecmc](https://github.com/epics-modules/ecmc) - EPICS support for EtherCAT motion and generic I/O controllers.
-* [autosave](https://github.com/epics-modules/autosave) - Saves and restores IOC PV values across restarts.
-* [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
-* [sequencer](https://github.com/epics-modules/sequencer) - State Notation Language (SNL) compiler and runtime sequencer for writing state machine programs in EPICS IOCs.
-* [ether_ip](https://github.com/epics-modules/ether_ip) - EPICS device support for Allen-Bradley PLCs via the EtherIP protocol.
-* [caPutLog](https://github.com/epics-modules/caPutLog) - Logs Channel Access put operations to iocLogServer for audit trails.
-* [calc](https://github.com/epics-modules/calc) - synApps module providing sCalcout, swait, transform, and other calculation record types.
-* [sscan](https://github.com/epics-modules/sscan) - Programmatically configures conditions and acquires data across positioner ranges; standard at experimental beamlines.
-* [mqtt](https://github.com/epics-modules/mqtt) - Native EPICS support for the MQTT protocol, enabling integration with IoT brokers.
-* [twincat-ads](https://github.com/epics-modules/twincat-ads) - EPICS device support for communicating with Beckhoff TwinCAT PLCs via the ADS protocol.
-* [lua](https://github.com/epics-modules/lua) - Lua shell and scripting interfaces for EPICS IOCs.
 * [devlib2](https://github.com/epics-modules/devlib2) - Portable helper library for PCIbus, MMIO, and VME64 CR/CSR hardware access; used by many hardware support modules.
 
-## Packaging
+### Motion & Industrial
+
+* [motor](https://github.com/epics-modules/motor) - EPICS motor record and device support for a wide range of motion controllers.
+* [ecmc](https://github.com/epics-modules/ecmc) - EPICS support for EtherCAT motion and generic I/O controllers.
+* [modbus](https://github.com/epics-modules/modbus) - EPICS support for Modbus TCP/IP and serial communication with PLCs and other devices.
+* [ether_ip](https://github.com/epics-modules/ether_ip) - EPICS device support for Allen-Bradley PLCs via the EtherIP protocol.
+* [twincat-ads](https://github.com/epics-modules/twincat-ads) - EPICS device support for communicating with Beckhoff TwinCAT PLCs via the ADS protocol.
+* [opcua](https://github.com/epics-modules/opcua) - EPICS device support for OPC UA servers.
+
+### Detectors & DAQ
+
+* [areaDetector](https://github.com/areaDetector/ADCore) - Framework and core library for detector and camera integration.
+* [mca](https://github.com/epics-modules/mca) - EPICS support for multi-channel analyzers (MCA) and multi-channel scalers (MCS).
+* [sscan](https://github.com/epics-modules/sscan) - Programmatically configures conditions and acquires data across positioner ranges; standard at experimental beamlines.
+* [calc](https://github.com/epics-modules/calc) - synApps module providing sCalcout, swait, transform, and other calculation record types.
+* [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
+
+### Utilities
+
+* [sequencer](https://github.com/epics-modules/sequencer) - State Notation Language (SNL) compiler and runtime sequencer for writing state machine programs in EPICS IOCs.
+* [autosave](https://github.com/epics-modules/autosave) - Saves and restores IOC PV values across restarts.
+* [caPutLog](https://github.com/epics-modules/caPutLog) - Logs Channel Access put operations to iocLogServer for audit trails.
+* [iocStats](https://github.com/epics-modules/iocStats) - IOC statistics and health monitoring records.
+* [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
+* [mqtt](https://github.com/epics-modules/mqtt) - Native EPICS support for the MQTT protocol, enabling integration with IoT brokers.
+
+### Scripting
+
+* [PyDevice](https://github.com/klemenv/PyDevice) - Device support for writing IOC functionality directly in Python.
+* [pyDevSup](https://github.com/epics-modules/pyDevSup) - Device support layer for implementing EPICS record processing in Python.
+* [lua](https://github.com/epics-modules/lua) - Lua shell and scripting interfaces for EPICS IOCs.
+
+## Deployment
 
 * [e3](https://gitlab.esss.lu.se/e3/e3) - Allows for easily building EPICS modules directly from source and automagically resolves module dependencies, and allows for site-specific modifications to EPICS modules without needing to directly modify source trees. _(site-ESS)_
 * [EPNix](https://epics-extensions.github.io/EPNix/nixos-25.11/) - EPNix (pronunciation: as if you are high on mushrooms) enables you to build, package, deploy IOCs and other EPICS-related software by using the Nix package manager.
 * [EPICS Containers](https://github.com/epics-containers) - A collection of tools and documentation for building, deploying and managing containerized EPICS IOCs in a Kubernetes cluster.
-
-## IOC Runners
-
 * [procServ](https://github.com/ralphlange/procServ) - Process server: wraps an IOC (or any child process) with a telnet console and automatic restart.
 * [pythonSoftIOC](https://github.com/DiamondLightSource/pythonSoftIOC) - Embed a fully functional EPICS IOC in a Python process. _(site-Diamond)_
 * [systemd-softioc](https://github.com/NSLS2/systemd-softioc) - systemd service scripts for managing EPICS soft IOCs via procServ.
@@ -98,31 +118,45 @@ pvAccess is a high-performance network communication protocol for signal monitor
 
 ## Applications
 
-* [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory service for a list of channels.
-* [Archiver](https://github.com/archiver-appliance/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
-* [Alarm Service](https://github.com/ControlSystemStudio/phoebus/tree/master/app/alarm) - EPICS alarm handling system, part of the Phoebus suite.
+### Operator Interfaces
+
 * [Phoebus](https://github.com/ControlSystemStudio/phoebus) - A framework and set of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
+* [caQtDM](https://github.com/caqtdm/caqtdm) - Qt-based display manager with MEDM migration tools; runs on Linux, Windows, macOS, iOS, and Android.
 * [PyDM](https://github.com/slaclab/pydm) - Python Display Manager: widget toolkit for building control system operator interfaces. _(site-SLAC)_
 * [React-Automation-Studio](https://github.com/React-Automation-Studio/React-Automation-Studio) - Web-based EPICS operator interface platform built with React and Node.js.
-* [VisualDCT](https://github.com/epics-extensions/VisualDCT) - Visual Database Configuration Tool: graphical editor for EPICS database files.
-* [oac-tree](https://github.com/oac-tree/oac-tree-bundle) - Behavior-tree-based procedure sequencing framework for EPICS control systems.
+* [weiss](https://github.com/weiss-controls/weiss) - Web EPICS Interface & Synoptic Studio: drag-and-drop tool for building EPICS web operator interfaces.
+* [medm](https://github.com/epics-extensions/medm) - Motif Editor and Display Manager: a legacy X11/Motif display tool, still in use at many sites.
+* [StripTool](https://github.com/epics-extensions/StripTool) - Legacy strip-chart plotting tool for Channel Access PVs.
+* [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Eclipse-based predecessor to Phoebus for monitoring and operating large scale control systems. Superseded by Phoebus. _(archived)_
+
+### Web & Gateways
+
 * [ca-gateway](https://github.com/epics-extensions/ca-gateway) - Channel Access PV Gateway: bridges multiple CA subnets and enforces access security.
 * [pvws](https://github.com/ornl-epics/pvws) - PV Web Socket: serves Channel Access and pvAccess PVs over WebSockets to browser clients.
 * [epics2web](https://github.com/JeffersonLab/epics2web) - Web gateway that exposes EPICS CA PVs via a JSON WebSocket API.
-* [weiss](https://github.com/weiss-controls/weiss) - Web EPICS Interface & Synoptic Studio: drag-and-drop tool for building EPICS web operator interfaces.
+
+### Data & Archiving
+
+* [Archiver](https://github.com/archiver-appliance/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
+* [archiverappliance-datasource](https://github.com/sasaki77/archiverappliance-datasource) - Grafana datasource plugin for querying EPICS Archiver Appliance data.
+* [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory service for a list of channels.
+
+### Alarms
+
+* [Alarm Service](https://github.com/ControlSystemStudio/phoebus/tree/master/app/alarm) - EPICS alarm handling system, part of the Phoebus suite.
+* [alh](https://github.com/epics-extensions/alh) - Alarm Handler: legacy GUI tool for monitoring and acknowledging EPICS alarms. Superseded by the Phoebus alarm system.
+
+### Development & Testing
+
+* [VisualDCT](https://github.com/epics-extensions/VisualDCT) - Visual Database Configuration Tool: graphical editor for EPICS database files.
 * [phoebusgen](https://github.com/als-epics/phoebusgen) - Python library for generating Phoebus OPI display files programmatically.
+* [epicsdbbuilder](https://github.com/DiamondLightSource/epicsdbbuilder) - Python library for programmatically building EPICS database files. _(site-Diamond)_
+* [whatrecord](https://github.com/pcdshub/whatrecord) - IOC meta-information tool: parses EPICS databases, startup scripts, and snl programs.
+* [oac-tree](https://github.com/oac-tree/oac-tree-bundle) - Behavior-tree-based procedure sequencing framework for EPICS control systems.
 * [lewis](https://github.com/ISISComputingGroup/lewis) - Python framework for writing simulated hardware devices for testing EPICS IOC control systems.
 * [cashark](https://github.com/mdavidsaver/cashark) - Wireshark dissector plugin for decoding EPICS Channel Access and pvAccess network traffic.
-* [CALab](https://github.com/epics-extensions/CALab) - Channel Access client plugin for LabVIEW.
-* [medm](https://github.com/epics-extensions/medm) - Motif Editor and Display Manager: a legacy X11/Motif display tool, still in use at many sites.
-* [caQtDM](https://github.com/caqtdm/caqtdm) - Qt-based display manager with MEDM migration tools; runs on Linux, Windows, macOS, iOS, and Android.
-* [StripTool](https://github.com/epics-extensions/StripTool) - Legacy strip-chart plotting tool for Channel Access PVs.
-* [alh](https://github.com/epics-extensions/alh) - Alarm Handler: legacy GUI tool for monitoring and acknowledging EPICS alarms. Superseded by the Phoebus alarm system.
 * [c2dataviewer](https://github.com/epics-extensions/c2dataviewer) - Python GUI front-end for visualizing AreaDetector and pvAccess image data.
-* [archiverappliance-datasource](https://github.com/sasaki77/archiverappliance-datasource) - Grafana datasource plugin for querying EPICS Archiver Appliance data.
-* [whatrecord](https://github.com/pcdshub/whatrecord) - IOC meta-information tool: parses EPICS databases, startup scripts, and snl programs.
-* [epicsdbbuilder](https://github.com/DiamondLightSource/epicsdbbuilder) - Python library for programmatically building EPICS database files. _(site-Diamond)_
-* [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Eclipse-based predecessor to Phoebus for monitoring and operating large scale control systems. Superseded by Phoebus. _(archived)_
+* [CALab](https://github.com/epics-extensions/CALab) - Channel Access client plugin for LabVIEW.
 
 ## Other Lists
 
