@@ -61,6 +61,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [pva2pva](https://github.com/epics-base/pva2pva) - PVAccess gateway/proxy for bridging pvAccess networks; superseded by p4p.gw. _(archived)_
 * [spvirit](https://github.com/ISISNeutronMuon/spvirit) - Complete pvAccess protocol suite in Rust (codec, client, server, NT types, Python bindings). _(site-ISIS)_
 * [pvxs-sys](https://github.com/ctrl-sys-ui/pvxs-sys) - Low-level Rust FFI bindings for the pvxs C++ pvAccess library.
+* [cfNameserver](https://github.com/ChannelFinder/cfNameserver) - pvAccess PV name server that resolves PVs using ChannelFinder and recsync information.
 
 #### Channel Access
 
@@ -130,6 +131,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [caPutLog](https://github.com/epics-modules/caPutLog) - Logs Channel Access put operations to iocLogServer for audit trails.
 * [iocStats](https://github.com/epics-modules/iocStats) - IOC statistics and health monitoring records.
 * [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
+* [recsync-rs](https://github.com/ChannelFinder/recsync-rs) - Rust implementation of the RecSync protocol with Python bindings.
 * [mqtt](https://github.com/epics-modules/mqtt) - Native EPICS support for the MQTT protocol, enabling integration with IoT brokers.
 * [epics-execute](https://github.com/KIT-IBPT/epics-execute) - EPICS device support for executing arbitrary shell scripts from an IOC. _(site-KIT)_
 * [IocshDeclWrap](https://github.com/paulscherrerinstitute/IocshDeclWrap) - C++ templates for easily wrapping user functions as EPICS IOC-shell commands. _(site-PSI)_
@@ -146,6 +148,7 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [e3](https://gitlab.esss.lu.se/e3/e3) - Allows for easily building EPICS modules directly from source and automagically resolves module dependencies, and allows for site-specific modifications to EPICS modules without needing to directly modify source trees. _(site-ESS)_
 * [EPNix](https://epics-extensions.github.io/EPNix/nixos-25.11/) - EPNix (pronunciation: as if you are high on mushrooms) enables you to build, package, deploy IOCs and other EPICS-related software by using the Nix package manager.
 * [EPICS Containers](https://github.com/epics-containers) - A collection of tools and documentation for building, deploying and managing containerized EPICS IOCs in a Kubernetes cluster.
+* [EPICS on conda-forge](https://github.com/conda-forge/epics-base-feedstock) - conda-forge feedstock for the `epics-base` package; installs EPICS Base and tools (medm, striptool, probe, alh, extensions) via conda.
 * [procServ](https://github.com/ralphlange/procServ) - Process server: wraps an IOC (or any child process) with a telnet console and automatic restart.
 * [pythonSoftIOC](https://github.com/DiamondLightSource/pythonSoftIOC) - Embed a fully functional EPICS IOC in a Python process. _(site-Diamond)_
 * [systemd-softioc](https://github.com/NSLS2/systemd-softioc) - systemd service scripts for managing EPICS soft IOCs via procServ.
@@ -191,9 +194,14 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [ChannelArchiver](https://github.com/epics-extensions/ChannelArchiver) - Legacy EPICS Channel Archiver predating Archiver Appliance; minimal maintenance. _(archived)_
 * [archiverappliance-datasource](https://github.com/sasaki77/archiverappliance-datasource) - Grafana datasource plugin for querying EPICS Archiver Appliance data.
 * [archapp](https://github.com/pcdshub/archapp) - Python client for Archiver Appliance with pandas/xarray support. _(site-PCDS)_
+* [epicsarchiver-retrieval-client](https://github.com/archiver-appliance/epicsarchiver-retrieval-client) - Official Python library and CLI for retrieving data from the EPICS Archiver Appliance.
+* [epicsarchiverap_pbrawclient](https://github.com/archiver-appliance/epicsarchiverap_pbrawclient) - Official Java client for the Archiver Appliance binary (PB raw) retrieval protocol.
+* [epicsarchiver-mgmt-client](https://github.com/archiver-appliance/epicsarchiver-mgmt-client) - Official Python library and CLI for the Archiver Appliance management (mgmt) interface.
 * [eapy](https://github.com/epics-extensions/eapy) - Python interface to the ChannelArchiver V4 data access layer.
 * [epics-archiver (Rust)](https://github.com/physwkim/archiver-rs) - Rust port of the EPICS Archiver Appliance with CA/pvAccess ingestion and PlainPB storage.
 * [Channel Finder](https://github.com/ChannelFinder/ChannelFinderService) - A RESTful directory service for a list of channels.
+* [pvinfo](https://github.com/ChannelFinder/pvinfo) - Web interface to ChannelFinder with integrations to other high-level control applications.
+* [pyCFClient](https://github.com/ChannelFinder/pyCFClient) - Python client library for the ChannelFinder directory service.
 * [aaclient](https://github.com/mdavidsaver/aaclient) - Python client for the EPICS Archiver Appliance.
 * [epicsarchiverap-env](https://github.com/jeonghanlee/epicsarchiverap-env) - Configuration/build environment for deploying the EPICS Archiver Appliance.
 
