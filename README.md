@@ -40,6 +40,8 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [pvAccess Specification](https://github.com/epics-base/pvAccessCPP/wiki/Protocol-Encoding)
 * [Original C++ Implementation](https://github.com/epics-base/pvAccessCPP) _(archived)_
 * [pvxs C++ Implementation](https://mdavidsaver.github.io/pvxs/index.html)
+* [p4p](https://github.com/epics-base/p4p) - Python bindings for pvAccess, providing client and server APIs.
+* [pvaPy](https://github.com/epics-base/pvaPy) - Python API for pvAccess with support for PvObject serialization and RPC services.
 * [Original Java Implementation](https://github.com/epics-base/epicsCoreJava/tree/3a32ca5dbc2fd9db610c3d7c08e37600b9aa0b32/pvAccessJava#readme) _(archived)_
 * [Phoebus Java Implementation](https://github.com/ControlSystemStudio/phoebus/tree/master/core/pva)
 
@@ -48,6 +50,11 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [Channel Access Specification](https://docs.epics-controls.org/en/latest/specs/ca_protocol.html)
 * [Java Implementation](https://github.com/epics-base/jca)
 * [pyepics](https://github.com/pyepics/pyepics) - PyEpics is a Python interface to the EPICS Channel Access (CA) library for the EPICS control system.
+* [cothread](https://github.com/DiamondLightSource/cothread) - Python library for asynchronous Channel Access using cooperative threading. _(site-Diamond)_
+* [caproto](https://github.com/caproto/caproto) - Pure-Python Channel Access implementation (client and server) with a pluggable I/O model.
+* [pcaspy](https://github.com/paulscherrerinstitute/pcaspy) - Portable Channel Access Server in Python for embedding CA servers in Python applications. _(site-PSI)_
+* [aioca](https://github.com/DiamondLightSource/aioca) - Asynchronous Channel Access client for Python asyncio. _(site-Diamond)_
+* [ophyd](https://github.com/bluesky/ophyd) - Hardware abstraction layer for EPICS and other control systems, part of the Bluesky ecosystem.
 
 ## Modules
 
@@ -55,6 +62,16 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [StreamDevice](https://github.com/paulscherrerinstitute/StreamDevice) - EPICS Driver for message based I/O. _(site-PSI)_
 * [recsync](https://github.com/ChannelFinder/recsync) - EPICS Record Synchronizor.
 * [mca](https://github.com/epics-modules/mca) - EPICS support for multi-channel analyzers (MCA) and multi-channel scalers (MCS).
+* [motor](https://github.com/epics-modules/motor) - EPICS motor record and device support for a wide range of motion controllers.
+* [iocStats](https://github.com/epics-modules/iocStats) - IOC statistics and health monitoring records.
+* [opcua](https://github.com/epics-modules/opcua) - EPICS device support for OPC UA servers.
+* [areaDetector](https://github.com/areaDetector/ADCore) - Framework and core library for detector and camera integration.
+* [PyDevice](https://github.com/klemenv/PyDevice) - Device support for writing IOC functionality directly in Python.
+* [pyDevSup](https://github.com/epics-modules/pyDevSup) - Device support layer for implementing EPICS record processing in Python.
+* [modbus](https://github.com/epics-modules/modbus) - EPICS support for Modbus TCP/IP and serial communication with PLCs and other devices.
+* [ecmc](https://github.com/epics-modules/ecmc) - EPICS support for EtherCAT motion and generic I/O controllers.
+* [autosave](https://github.com/epics-modules/autosave) - Saves and restores IOC PV values across restarts.
+* [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
 
 ## Packaging
 
@@ -65,6 +82,9 @@ pvAccess is a high-performance network communication protocol for signal monitor
 ## IOC Runners
 
 * [procServ](https://github.com/ralphlange/procServ) - Process server: wraps an IOC (or any child process) with a telnet console and automatic restart.
+* [pythonSoftIOC](https://github.com/DiamondLightSource/pythonSoftIOC) - Embed a fully functional EPICS IOC in a Python process. _(site-Diamond)_
+* [systemd-softioc](https://github.com/NSLS2/systemd-softioc) - systemd service scripts for managing EPICS soft IOCs via procServ.
+* [ibek](https://github.com/epics-containers/ibek) - IOC Builder for EPICS and Kubernetes: generates IOC startup scripts from YAML.
 
 ## Applications
 
@@ -72,6 +92,22 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [Archiver](https://github.com/archiver-appliance/epicsarchiverap) - This is an implementation of an archiver for EPICS control systems that aims to archive millions of PVs.
 * [Alarm Service](https://github.com/ControlSystemStudio/phoebus/tree/master/app/alarm) - EPICS alarm handling system, part of the Phoebus suite.
 * [Phoebus](https://github.com/ControlSystemStudio/phoebus) - A framework and set of tools to monitor and operate large scale control systems, such as the ones in the accelerator community.
+* [PyDM](https://github.com/slaclab/pydm) - Python Display Manager: widget toolkit for building control system operator interfaces. _(site-SLAC)_
+* [React-Automation-Studio](https://github.com/React-Automation-Studio/React-Automation-Studio) - Web-based EPICS operator interface platform built with React and Node.js.
+* [VisualDCT](https://github.com/epics-extensions/VisualDCT) - Visual Database Configuration Tool: graphical editor for EPICS database files.
+* [oac-tree](https://github.com/oac-tree/oac-tree-bundle) - Behavior-tree-based procedure sequencing framework for EPICS control systems.
+* [ca-gateway](https://github.com/epics-extensions/ca-gateway) - Channel Access PV Gateway: bridges multiple CA subnets and enforces access security.
+* [pvws](https://github.com/ornl-epics/pvws) - PV Web Socket: serves Channel Access and pvAccess PVs over WebSockets to browser clients.
+* [epics2web](https://github.com/JeffersonLab/epics2web) - Web gateway that exposes EPICS CA PVs via a JSON WebSocket API.
+* [weiss](https://github.com/weiss-controls/weiss) - Web EPICS Interface & Synoptic Studio: drag-and-drop tool for building EPICS web operator interfaces.
+* [phoebusgen](https://github.com/als-epics/phoebusgen) - Python library for generating Phoebus OPI display files programmatically.
+* [lewis](https://github.com/ISISComputingGroup/lewis) - Python framework for writing simulated hardware devices for testing EPICS IOC control systems.
+* [cashark](https://github.com/mdavidsaver/cashark) - Wireshark dissector plugin for decoding EPICS Channel Access and pvAccess network traffic.
+* [CALab](https://github.com/epics-extensions/CALab) - Channel Access client plugin for LabVIEW.
+* [medm](https://github.com/epics-extensions/medm) - Motif Editor and Display Manager: a legacy X11/Motif display tool, still in use at many sites.
+* [archiverappliance-datasource](https://github.com/sasaki77/archiverappliance-datasource) - Grafana datasource plugin for querying EPICS Archiver Appliance data.
+* [whatrecord](https://github.com/pcdshub/whatrecord) - IOC meta-information tool: parses EPICS databases, startup scripts, and snl programs.
+* [epicsdbbuilder](https://github.com/DiamondLightSource/epicsdbbuilder) - Python library for programmatically building EPICS database files. _(site-Diamond)_
 * [CS Studio](https://github.com/ControlSystemStudio/cs-studio) - Eclipse-based predecessor to Phoebus for monitoring and operating large scale control systems. Superseded by Phoebus. _(archived)_
 
 ## Other Lists
