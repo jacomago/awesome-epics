@@ -30,6 +30,7 @@ The Experimental Physics and Industrial Control System (EPICS) is a set of softw
 ### Editor Extensions
 
 * [vscode](https://github.com/epics-extensions/vscode-epics) - VS Code colorization for EPICS database, templates and substitution files.
+* [epics.nvim](https://github.com/epics-extensions/epics.nvim) - EPICS-related tools for Neovim including syntax highlighting and utilities.
 
 ### Network Protocols
 
@@ -72,6 +73,15 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [ecmc](https://github.com/epics-modules/ecmc) - EPICS support for EtherCAT motion and generic I/O controllers.
 * [autosave](https://github.com/epics-modules/autosave) - Saves and restores IOC PV values across restarts.
 * [mrfioc2](https://github.com/epics-modules/mrfioc2) - EPICS driver for Micro Research Finland event-based timing system devices.
+* [sequencer](https://github.com/epics-modules/sequencer) - State Notation Language (SNL) compiler and runtime sequencer for writing state machine programs in EPICS IOCs.
+* [ether_ip](https://github.com/epics-modules/ether_ip) - EPICS device support for Allen-Bradley PLCs via the EtherIP protocol.
+* [caPutLog](https://github.com/epics-modules/caPutLog) - Logs Channel Access put operations to iocLogServer for audit trails.
+* [calc](https://github.com/epics-modules/calc) - synApps module providing sCalcout, swait, transform, and other calculation record types.
+* [sscan](https://github.com/epics-modules/sscan) - Programmatically configures conditions and acquires data across positioner ranges; standard at experimental beamlines.
+* [mqtt](https://github.com/epics-modules/mqtt) - Native EPICS support for the MQTT protocol, enabling integration with IoT brokers.
+* [twincat-ads](https://github.com/epics-modules/twincat-ads) - EPICS device support for communicating with Beckhoff TwinCAT PLCs via the ADS protocol.
+* [lua](https://github.com/epics-modules/lua) - Lua shell and scripting interfaces for EPICS IOCs.
+* [devlib2](https://github.com/epics-modules/devlib2) - Portable helper library for PCIbus, MMIO, and VME64 CR/CSR hardware access; used by many hardware support modules.
 
 ## Packaging
 
@@ -105,6 +115,10 @@ pvAccess is a high-performance network communication protocol for signal monitor
 * [cashark](https://github.com/mdavidsaver/cashark) - Wireshark dissector plugin for decoding EPICS Channel Access and pvAccess network traffic.
 * [CALab](https://github.com/epics-extensions/CALab) - Channel Access client plugin for LabVIEW.
 * [medm](https://github.com/epics-extensions/medm) - Motif Editor and Display Manager: a legacy X11/Motif display tool, still in use at many sites.
+* [caQtDM](https://github.com/caqtdm/caqtdm) - Qt-based display manager with MEDM migration tools; runs on Linux, Windows, macOS, iOS, and Android.
+* [StripTool](https://github.com/epics-extensions/StripTool) - Legacy strip-chart plotting tool for Channel Access PVs.
+* [alh](https://github.com/epics-extensions/alh) - Alarm Handler: legacy GUI tool for monitoring and acknowledging EPICS alarms. Superseded by the Phoebus alarm system.
+* [c2dataviewer](https://github.com/epics-extensions/c2dataviewer) - Python GUI front-end for visualizing AreaDetector and pvAccess image data.
 * [archiverappliance-datasource](https://github.com/sasaki77/archiverappliance-datasource) - Grafana datasource plugin for querying EPICS Archiver Appliance data.
 * [whatrecord](https://github.com/pcdshub/whatrecord) - IOC meta-information tool: parses EPICS databases, startup scripts, and snl programs.
 * [epicsdbbuilder](https://github.com/DiamondLightSource/epicsdbbuilder) - Python library for programmatically building EPICS database files. _(site-Diamond)_
