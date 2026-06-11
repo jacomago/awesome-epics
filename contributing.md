@@ -19,7 +19,7 @@ Each entry is a single list item:
 
 Rules (enforced by [awesome-lint](https://github.com/sindresorhus/awesome-lint)):
 
-- Keep descriptions concise — say *what it is* and *why it's useful*, don't just
+- Keep descriptions concise — say _what it is_ and _why it's useful_, don't just
   repeat the name.
 - Add new entries in the most appropriate existing section. If a project comes
   from a specific facility, note it in parentheses at the end of the
