@@ -1,0 +1,11 @@
+# markdownlint-cli2 configuration (replaces the Ruby mdl .mdlrc)
+config:
+  # Line length: list descriptions are intentionally long.
+  MD013: false
+  # Unordered list marker style is owned by Prettier (dashes).
+  MD004: false
+  # Allow long ToC / nested lists without complaints about indentation.
+  MD007:
+    indent: 2
+globs:
+  - "*.md"
